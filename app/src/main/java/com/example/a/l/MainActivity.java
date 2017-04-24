@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mService=ApiUtils.getSOService();
+        System.out.print("aaa");
     }
     public void b(View view){
         mService.getAnswers().enqueue(new Callback<List<SOAnswersResponse>>() {
